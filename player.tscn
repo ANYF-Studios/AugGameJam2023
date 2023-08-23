@@ -6,8 +6,8 @@
 [sub_resource type="CircleShape2D" id="CircleShape2D_w7hbq"]
 radius = 63.0
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_iwnxu"]
-radius = 62.0725
+[sub_resource type="CircleShape2D" id="CircleShape2D_hbw1l"]
+radius = 64.0078
 
 [node name="Player" type="CharacterBody2D"]
 collision_layer = 2
@@ -23,5 +23,4 @@ shape = SubResource("CircleShape2D_w7hbq")
 [node name="Area2D" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-shape = SubResource("CircleShape2D_iwnxu")
-debug_color = Color(0.894118, 0.247059, 0.521569, 0.419608)
+shape = SubResource("CircleShape2D_hbw1l")

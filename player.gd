@@ -9,5 +9,5 @@ func _physics_process(_delta: float):
 	move_and_slide()
 	
 func _unhandled_input(_event: InputEvent):
-	dir = Input.get_vector("Left", "Right", "", "")
+	dir.x = Input.get_axis("Left", "Right")
 	dir = dir.normalized()

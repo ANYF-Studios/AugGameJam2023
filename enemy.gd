@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 
-const SPEED = 20
+const SPEED = 200
 
 var target: Node2D
 @onready var nav_agent := $NavigationAgent2D as NavigationAgent2D
@@ -21,3 +21,7 @@ func make_path() -> void:
 
 func _on_timer_timeout():
 	make_path()
+
+
+func _on_area_2d_area_entered(_area):
+	queue_free()
