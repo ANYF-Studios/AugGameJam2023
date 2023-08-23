@@ -23,5 +23,7 @@ func _on_timer_timeout():
 	make_path()
 
 
-func _on_area_2d_area_entered(_area):
-	queue_free()
+
+func _on_area_2d_area_entered(area):
+	if area.get_parent().name == "Player":
+		queue_free()
